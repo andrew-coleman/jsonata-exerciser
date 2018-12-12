@@ -7,7 +7,7 @@
 <html>
   <head>
     <title>JSONata Exerciser</title>
-    <link rel="icon" type="image/png" href="images/jsonata-button.png" />
+    <link rel="icon" type="image/png" href="public/images/jsonata-button.png" />
     <script src="/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" type="text/css" href="/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="/codemirror/addon/hint/show-hint.css">
@@ -23,11 +23,11 @@
     <script src="/codemirror/addon/search/jump-to-line.js"></script>
     <link rel="stylesheet" href="/codemirror/addon/dialog/dialog.css">
     <link rel="stylesheet" href="/codemirror/addon/search/matchesonscrollbar.css">
-    <link rel="stylesheet" type="text/css" href="style/exerciser.css">
+    <link rel="stylesheet" type="text/css" href="public/style/exerciser.css">
     <script src="/codemirror/mode/javascript/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/jsonata/jsonata.min.js"></script>
-    <script defer src="scripts/bundle.js"></script>
+    <script defer src="public/scripts/bundle.js"></script>
     <script type="text/javascript">
         var save_recaptcha;
         var slack_recaptcha;
@@ -52,17 +52,17 @@
 
   <body>
     <div id="banner">
-      <div id="logo"><a href="http://jsonata.org"><img src="images/JSONata-white-38.png"></a></div>
+      <div id="logo"><a href="http://jsonata.org"><img src="public/images/JSONata-white-38.png"></a></div>
       <div id="banner1" class="bannerpart">JSONata Exerciser</div>
       <div id="banner2" class="bannerpart">&nbsp;</div>
       <div id="banner3" class="bannerpart">&nbsp;</div>
       <div id="banner4" class="bannerpart">
-        <a href="#share" style="visibility: <%= sharable %>"><img src="images/share.svg" alt="Save and Share"></a>
-        <a href="http://docs.jsonata.org"><img src="images/docs-white-32.png" alt="Documentation"></a>
-        <a href="http://twitter.com/intent/tweet?status=JSONata:  The JSON query and transformation language.+http://jsonata.org"><img id="t-icon" src="images/twitter-white.png"></a>
-        <a href="#slack"><img src="images/Slack_Mark_Monochrome_White.svg" alt="Join us on Slack"></a>
-        <a href="http://stackoverflow.com/search?q=JSONata"><img src="images/so-white-32.png"></a>
-        <a href="https://github.com/jsonata-js/jsonata"><img src="images/GitHub-Mark-Light-32px.png"></a>
+        <a href="#share" style="visibility: <%= sharable %>"><img src="public/images/share.svg" alt="Save and Share"></a>
+        <a href="http://docs.jsonata.org"><img src="public/images/docs-white-32.png" alt="Documentation"></a>
+        <a href="http://twitter.com/intent/tweet?status=JSONata:  The JSON query and transformation language.+http://jsonata.org"><img id="t-icon" src="public/images/twitter-white.png"></a>
+        <a href="#slack"><img src="public/images/Slack_Mark_Monochrome_White.svg" alt="Join us on Slack"></a>
+        <a href="http://stackoverflow.com/search?q=JSONata"><img src="public/images/so-white-32.png"></a>
+        <a href="https://github.com/jsonata-js/jsonata"><img src="public/images/GitHub-Mark-Light-32px.png"></a>
       </div>
     </div>
     <div class="content">
