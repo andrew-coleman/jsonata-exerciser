@@ -8,7 +8,7 @@
   <head>
     <title>JSONata Exerciser</title>
     <link rel="icon" type="image/png" href="public/images/jsonata-button.png" />
-    <script src="/codemirror/lib/codemirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.42.0/lib/codemirror.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="/codemirror/addon/hint/show-hint.css">
     <script src="/codemirror/addon/edit/closebrackets.js"></script>
@@ -27,27 +27,7 @@
     <script src="/codemirror/mode/javascript/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/jsonata/jsonata.min.js"></script>
-    <script defer src="public/scripts/bundle.js"></script>
-    <script type="text/javascript">
-        var save_recaptcha;
-        var slack_recaptcha;
-        var onloadCallback = function() {
-            save_recaptcha = grecaptcha.render('save-captcha', {
-                'sitekey' : '<%= recapture_sitekey %>',
-                'callback' : function(resp) {
-                    window.saveCallback(resp);
-                },
-                'theme': 'light'
-            });
-            slack_recaptcha = grecaptcha.render('slack-captcha', {
-                'sitekey' : '<%= recapture_sitekey %>',
-                'callback' : function(resp) {
-                    window.slackCallback(resp);
-                },
-                'theme' : 'light'
-            });
-        };
-    </script>
+    <script defer src="public/scripts/exerciser.js"></script>
   </head>
 
   <body>
@@ -57,19 +37,17 @@
       <div id="banner2" class="bannerpart">&nbsp;</div>
       <div id="banner3" class="bannerpart">&nbsp;</div>
       <div id="banner4" class="bannerpart">
-        <a href="#share" style="visibility: <%= sharable %>"><img src="public/images/share.svg" alt="Save and Share"></a>
         <a href="http://docs.jsonata.org"><img src="public/images/docs-white-32.png" alt="Documentation"></a>
         <a href="http://twitter.com/intent/tweet?status=JSONata:  The JSON query and transformation language.+http://jsonata.org"><img id="t-icon" src="public/images/twitter-white.png"></a>
-        <a href="#slack"><img src="public/images/Slack_Mark_Monochrome_White.svg" alt="Join us on Slack"></a>
         <a href="http://stackoverflow.com/search?q=JSONata"><img src="public/images/so-white-32.png"></a>
         <a href="https://github.com/jsonata-js/jsonata"><img src="public/images/GitHub-Mark-Light-32px.png"></a>
       </div>
     </div>
     <div class="content">
       <div id="srcdiv" class="src split split-horizontal">
-        <textarea id="source"><%= input %></textarea>
+        <textarea id="source">{"test": "data"}</textarea>
         <div id="json-label" class="label">JSON</div>
-        <img src="images/format.png" id="json-format" title="Format">
+        <img src="public/images/format.png" id="json-format" title="Format">
         <select id="sample-data" onchange="window.selectData(this);">
           <option value="Invoice">Invoice</option>
           <option value="Address">Address</option>
@@ -78,7 +56,7 @@
       </div>
       <div id="rhsdiv" class="rhs split split-horizontal">
         <div class="pth split content" id="pthdiv">
-          <textarea id="path"><%= jsonata %></textarea>
+          <textarea id="path">test</textarea>
           <div id="jsonata-label" class="label">JSONata</div>
           <select id="version-select" onchange="window.selectVersion(this);"></select>
           <div id="version-label" class="label"></div>
@@ -87,24 +65,6 @@
           <textarea id="result"></textarea>
           <div id="result-label" class="label">Result</div>
         </div>
-      </div>
-    </div>
-
-    <div id="share" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close" onclick="grecaptcha.reset(save_recaptcha);">&times;</a>
-        <h2 id="share-title">Save expression</h2>
-        <p id="share-msg">Save and share your JSONata expression.</p>
-        <p class="verify">Please check the box below to get a URL to your saved expression...</p>
-        <div id="save-captcha"></div>
-      </div>
-    </div>
-
-    <div id="slack" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close" onclick="grecaptcha.reset(slack_recaptcha);">&times;</a>
-        <h2 id="slack-title">Join us on Slack</h2>
-        <p><input id="slack-email" placeholder="Enter your email"></p>
-        <p class="verify">Please check the box below to get an invitation...</p>
-        <div id="slack-captcha"></div>
       </div>
     </div>
 
@@ -123,7 +83,6 @@
         });
     </script>
 
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   </body>
 
 </html>
