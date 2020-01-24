@@ -1,39 +1,44 @@
-# JSONata Exerciser
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This allows you to test JSONata expressions against a JSON input structure.
-Paste the JSON data into the left hand pane, and type JSONata expressions into the top right pane.
-The result will appear below. 
+## Available Scripts
 
-## Running the app locally
+In the project directory, you can run:
 
-- `npm install`
-- `npm start`
+### `npm start`
 
-The app is also available at [try.jsonata.org](http://try.jsonata.org/)
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Optional: Enabling 'Save and Share' icon
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-This requires a Cloudant database to store expressions
+### `npm test`
 
-- Provision cloudant service
-- create a database named `exerciser`
-- Bind service to Exerciser app
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The exerciser will pick up the credentials from VCAP_SERVICES, if provisioned in Cloud Foundry
+### `npm run build`
 
-This also requires Google ReCapture credentials, which are assigned to environment variables:
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- RECAPTURE_SITEKEY
-- RECAPTURE_SECRET
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-## Selecting version of JSONata
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-On loading, the exerciser uses the latest version of JSONata served up from [unpkg.com](https://unpkg.com/jsonata/jsonata.min.js).
+### `npm run eject`
 
-It is possible to load different versions of JSONata by typing the following command into the JSONata input box and pressing return:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-`J:use 1.3.1`
-to load version 1.3.1 which was published to [npm](http://npmjs.com/jsonata)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-It is also possible to load a development branch from GitHub using (e.g.):
-`J:branch my_branch`
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

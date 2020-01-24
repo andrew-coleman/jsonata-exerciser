@@ -1,0 +1,41 @@
+{
+  "name": "jsonata-exerciser",
+  "version": "1.0.0",
+  "main": "app.js",
+  "homepage": "http://try.jsonata.org/",
+  "scripts": {
+    "start": "node app.js",
+    "postinstall": "npm run browserify",
+    "browserify": "browserify public/scripts/exerciser.js -o public/scripts/bundle.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "JSONata",
+    "Exerciser",
+    "JSON",
+    "query",
+    "transformation",
+    "transform",
+    "mapping",
+    "path"
+  ],
+  "dependencies": {
+    "express": "^4.16.2",
+    "ejs": "^2.5.7",
+    "cloudant": "^1.10.0",
+    "body-parser": "^1.18.2",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.0",
+    "errorhandler": "^1.5.0",
+    "codemirror": "^5.19.0",
+    "moment": "^2.20.1",
+    "jsonata": "^1.5.0",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2"
+  },
+  "engines": {
+    "node": "6.x"
+  }
+}

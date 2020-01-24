@@ -1,41 +1,34 @@
 {
   "name": "jsonata-exerciser",
-  "version": "1.0.0",
-  "main": "app.js",
-  "homepage": "http://try.jsonata.org/",
-  "scripts": {
-    "start": "node app.js",
-    "postinstall": "npm run browserify",
-    "browserify": "browserify public/scripts/exerciser.js -o public/scripts/bundle.js"
-  },
-  "license": "MIT",
-  "keywords": [
-    "JSONata",
-    "Exerciser",
-    "JSON",
-    "query",
-    "transformation",
-    "transform",
-    "mapping",
-    "path"
-  ],
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.2",
-    "ejs": "^2.5.7",
-    "cloudant": "^1.10.0",
-    "body-parser": "^1.18.2",
-    "method-override": "^3.0.0",
-    "morgan": "^1.9.0",
-    "errorhandler": "^1.5.0",
-    "codemirror": "^5.19.0",
-    "moment": "^2.20.1",
-    "jsonata": "^1.5.0",
-    "shortid": "^2.2.8"
+    "highlight.js": "^9.18.0",
+    "jsonata": "^1.7.0",
+    "prismjs": "^1.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-monaco-editor": "^0.22.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-select": "^2.4.4",
+    "react-split": "^2.0.7",
+    "react-split-pane": "^0.1.89",
+    "request": "^2.88.0"
   },
-  "devDependencies": {
-    "browserify": "^16.2.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "engines": {
-    "node": "6.x"
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
