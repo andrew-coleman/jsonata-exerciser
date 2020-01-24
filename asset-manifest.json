@@ -1,7 +1,7 @@
 {
   "main.css": "/jsonata-exerciser/static/css/main.203bc65c.chunk.css",
-  "main.js": "/jsonata-exerciser/static/js/main.3eb3a353.chunk.js",
-  "main.js.map": "/jsonata-exerciser/static/js/main.3eb3a353.chunk.js.map",
+  "main.js": "/jsonata-exerciser/static/js/main.6cc9aa12.chunk.js",
+  "main.js.map": "/jsonata-exerciser/static/js/main.6cc9aa12.chunk.js.map",
   "static/css/1.e3f8efee.chunk.css": "/jsonata-exerciser/static/css/1.e3f8efee.chunk.css",
   "static/js/1.86eb5d73.chunk.js": "/jsonata-exerciser/static/js/1.86eb5d73.chunk.js",
   "static/js/1.86eb5d73.chunk.js.map": "/jsonata-exerciser/static/js/1.86eb5d73.chunk.js.map",
@@ -18,6 +18,6 @@
   "static/css/1.e3f8efee.chunk.css.map": "/jsonata-exerciser/static/css/1.e3f8efee.chunk.css.map",
   "static/css/main.203bc65c.chunk.css.map": "/jsonata-exerciser/static/css/main.203bc65c.chunk.css.map",
   "index.html": "/jsonata-exerciser/index.html",
-  "precache-manifest.a5132ad0839b1c5041fcbe439bf417ff.js": "/jsonata-exerciser/precache-manifest.a5132ad0839b1c5041fcbe439bf417ff.js",
+  "precache-manifest.c9031986595579f89be0595a51beb605.js": "/jsonata-exerciser/precache-manifest.c9031986595579f89be0595a51beb605.js",
   "service-worker.js": "/jsonata-exerciser/service-worker.js"
 }
