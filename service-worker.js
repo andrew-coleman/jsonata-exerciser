@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jsonata-exerciser/precache-manifest.c9031986595579f89be0595a51beb605.js"
+  "/jsonata-exerciser/precache-manifest.3f24dd3dc0c7f1d43d637490ca1d4cf7.js"
 );
 
 workbox.clientsClaim();
