@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/jsonata-exerciser/static/js/runtime~main.9437fc25.js"
   },
   {
-    "revision": "5a9871146643f299d480",
+    "revision": "27662ea1966d0539b6f0",
     "url": "/jsonata-exerciser/static/css/main.203bc65c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/jsonata-exerciser/static/js/2.b1cf98a1.chunk.js"
   },
   {
-    "revision": "5a9871146643f299d480",
-    "url": "/jsonata-exerciser/static/js/main.5a987114.chunk.js"
+    "revision": "27662ea1966d0539b6f0",
+    "url": "/jsonata-exerciser/static/js/main.27662ea1.chunk.js"
   },
   {
     "revision": "390d4488b6c2ee3380b9182751248475",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/jsonata-exerciser/json.worker.js"
   },
   {
-    "revision": "9b8f70f837326227c74f08ab91da539d",
+    "revision": "250fe0255843ade78708083f1b705cea",
     "url": "/jsonata-exerciser/index.html"
   },
   {
