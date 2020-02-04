@@ -1,3 +1,9 @@
+/**
+ * © Copyright IBM Corp. 2016, 2020 All Rights Reserved
+ *   Project name: JSONata
+ *   This project is licensed under the MIT License, see LICENSE
+ */
+
 export default {
     Invoice: {
         json: {
@@ -123,7 +129,10 @@ export default {
                 }
             }
         },
-        jsonata: "Surname"
+        jsonata: `{
+  "name": FirstName & " " & Surname,
+  "mobile": Phone[type = "mobile"].number
+}`
     },
     Schema: {
         json: {
@@ -254,7 +263,7 @@ export default {
                 }
             }
         },
-        jsonata: "properties"
+        jsonata: "**.properties ~> $keys()"
     },
     Library: {
         json: {
